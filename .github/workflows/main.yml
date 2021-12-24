@@ -1,15 +1,16 @@
 name: Update subconverter
 env:
-  # 提交说明的内容
+  # 提交更新说明的内容
   message: 'Update subconverter'
   # 从何处更新subconverter
-  # release 从release中下载稳定版，可用下面的tag参数指定版本
-  # build 拉取最新代码自行编译
-  # action 从最新commit所关联github action处下载
-  branch: 'release'
+  branch: 'release'  
   # 当branch参数设置为release时，下载指定版本的release
+  # release：从release中下载稳定版本，可用下面的tag参数指定版本
+  # action： 从最新代码所关联github action的Artifacts里下载已经编译好的
+  # build：拉取最新代码自己编译
   # 设置为latest时，自动选择最新版本release
   tag: 'latest'
+  # 指定下载的版本，latest为自动选择最新版本
   # 自定义配置文件的方法
   # sed 在Modify pref.ini by sed步骤中，用sed命令修改配置文件
   # files 使用本项目中/files文件夹中的所有文件
